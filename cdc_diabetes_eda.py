@@ -11,11 +11,11 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt # pyright: ignore[reportMissingModuleSource]
-import seaborn as sns # pyright: ignore[reportMissingModuleSource]
+import matplotlib.pyplot as plt 
+import seaborn as sns 
 import warnings as wr
 wr.filterwarnings('ignore')
-import matplotlib.ticker as mtick # pyright: ignore[reportMissingModuleSource]
+import matplotlib.ticker as mtick 
 
 # =============================================================================
 # 1. LOAD DATA
@@ -23,8 +23,9 @@ import matplotlib.ticker as mtick # pyright: ignore[reportMissingModuleSource]
 # Download from Kaggle:
 # https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 # File: diabetes_012_health_indicators_BRFSS2015.csv
+# Get full filepath to load into a pandas dataframe
 
-df = pd.read_csv("/Users/rachelratajczak/Desktop/GitHub/EDA_Diabetes_Project/archive/diabetes_012_health_indicators_BRFSS2015.csv")
+df = pd.read_csv("/Users/rachelratajczak/Desktop/Career/GitHub/EDA_Diabetes_Project/archive/diabetes_012_health_indicators_BRFSS2015.csv")
 print(df.head())
 
 # =============================================================================
@@ -51,7 +52,7 @@ print("\n Missing values")
 print("-------------------------------------------------------------------------")
 print(df.isnull().sum())
 
-# Check for duplicates 
+# Check for duplicates - looking for unique values
 print("\n Duplicate values")
 print("-------------------------------------------------------------------------")
 print(df.nunique())
@@ -119,7 +120,7 @@ plt.show()
 print("Saved: 03_risk_factor_prevalence.png")
 
 # --- 3.4 Age group analysis -------------------------------------------------
-# Age coded 1-13 (1=18-24 ... 13=80+)
+# Age coded 1-13 (1 = 18-24 ... 13 = 80+)
 age_labels = {1:"18-24", 2:"25-29", 3:"30-34", 4:"35-39", 5:"40-44",
               6:"45-49", 7:"50-54", 8:"55-59", 9:"60-64", 10:"65-69",
               11:"70-74", 12:"75-79", 13:"80+"}
