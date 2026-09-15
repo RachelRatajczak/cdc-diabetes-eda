@@ -16,7 +16,7 @@ CDC Diabetes Health Indicators Dataset via Kaggle — derived from the 2015 BRFS
 - Features: HighBP, HighChol, BMI, Smoker, Stroke, HeartDiseaseorAttack, PhysActivity, HvyAlcoholConsump, GenHlth, MentHlth, PhysHlth, DiffWalk, Age, Education, Income
 - Source: [Kaggle — CDC Diabetes Health Indicators](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset)
 
-## Visualizations
+## Visualizations 
 | Plot | Description |
 |------|-------------|
 | 01 — Target distribution | Class balance across no diabetes, prediabetes, and diabetes groups |
